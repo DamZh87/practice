@@ -1,0 +1,284 @@
+:root {
+   --gold-color: rgba(235, 194, 113, 1);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.geologica-regular {
+   font-family: "Geologica", sans-serif;
+}
+.inter-regular {
+   font-family: "Inter", sans-serif;
+}
+
+.header {
+   z-index: -500;
+   position: relative;
+   width: 100%;
+   height: 55.5rem;
+}
+.fullscreen-bg {
+   overflow: hidden;
+   z-index: -100;
+   position: relative;
+   height: 55.5rem;
+   width: 100%;
+}
+
+.fullscreen-bg__video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+.overlay {
+   background: rgba(21, 115, 255, 0.2);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 55.5rem;
+   z-index: 4;
+   display: flex;
+   flex-direction: column;
+}
+
+.top__menu {
+   position: relative;
+   top: 2rem;
+   height: 3.6rem;
+   width: 70%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   z-index: 5;
+}
+
+.top_nav {
+   position: relative;
+   display: flex;
+   gap: 1.5rem;
+   justify-content: space-between;
+   font-family: "Geologica", sans-serif;
+   font-weight: 400;
+   font-size: 1.25rem;
+}
+
+.top_nav ul {
+   width: 736px;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   list-style: none;
+}
+
+.top_nav li {
+   margin: 0 1rem;
+}
+
+.top_nav a {
+   position: relative;
+   color: #fff !important;
+   text-decoration: none;
+   padding-bottom: 5px;
+}
+
+.top_nav a::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 3px;
+   background-color: var(--gold-color);
+   border-radius: 12px;
+   transform: scaleX(0);
+   transition: transform 0.3s ease;
+   transform-origin: center;
+}
+
+.top_nav a:hover::after {
+   transform: scaleX(1);
+}
+
+.login__btn {
+   font-family: "Inter", sans-serif !important;
+   text-transform: uppercase;
+   color: #ffffff;
+   padding: 1rem 2rem;
+   border-radius: 8px;
+   border: 3px solid var(--gold-color);
+   font-size: 1rem;
+   font-weight: 700;
+   cursor: pointer;
+   z-index: 5;
+   background: transparent;
+}
+
+.login__btn:hover {
+   background: var(--gold-color);
+   color: #000000;
+   transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header__content {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   left: 158px;
+   top: 174px;
+   width: 1644px;
+   height: 567px;
+}
+
+.header__content__left {
+   position: relative;
+   width: 50%;
+   height: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.header__title {
+   font-family: "Geologica", sans-serif;
+   font-weight: 400;
+   font-size: 3rem;
+   color: #ffffff;
+}
+.header__text {
+   font-family: "Geologica", sans-serif;
+   font-weight: 400;
+   font-size: 3rem;
+   color: var(--gold-color);
+}
+
+.header__content__left_contest {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.contest__text {
+   font-family: "Geologica", sans-serif;
+   font-weight: 400;
+   color: #ffffff;
+   font-size: 2rem;
+   padding-bottom: 1rem;
+   margin-top: 2rem;
+}
+.contest__btn {
+   font-family: "Inter", sans-serif !important;
+   text-transform: uppercase;
+   color: #ffffff;
+   padding: 1rem 2rem;
+   border-radius: 8px;
+   border: 3px solid var(--gold-color);
+   font-size: 1rem;
+   font-weight: 700;
+   cursor: pointer;
+   z-index: 5;
+   background: var(--gold-color);
+}
+
+.header__content__right {
+   position: relative;
+   width: 50%;
+   height: 46rem;
+}
+
+.header__img {
+  
+   height: auto;
+   max-height: 46rem;
+}
+
+.companies {
+   position: relative;
+   width: 100%;
+   height: 21rem;
+   
+   
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 48rem;
+    
+}
+
+.ornament_separator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem 1rem;
+    flex-direction: row;
+}
+.logo_small_img{
+width: 2.4rem;
+height: auto;
+
+}
+
+.as_numbers{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Geologica", sans-serif;
+    font-weight: 500;
+    font-size: 3.8rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        align-content: center;
+    height: 17.5rem;
+    margin:0 20rem;
+}
+
+.quantity__number{
+    font-family: "Geologica", sans-serif;
+    font-weight: 600;
+    font-size: 7.5rem;
+    text-align: center;
+    color: var(--gold-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    mix-blend-mode: multiply;
+    margin-bottom: 4rem;
+}
+
+.quantity__text{
+    font-family: "Geologica", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(23, 96, 164, 1);
+}
+
+.map{
+    width: 100%;
+    height: 60rem;
+    position: relative;
+    display: flex;  
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.map__img{
+    width: auto;
+    height: 43.7rem;
+    max-height: 60rem;
+}
